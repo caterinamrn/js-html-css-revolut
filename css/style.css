@@ -103,6 +103,41 @@ header .jumbotron .introduzione p{
   width: 90%;
   height: auto;
 }
+.jumbotron .inserire_dati {
+  display: flex;
+  margin-top: 30px;
+}
+.jumbotron .inserire_dati #btnInizia {
+  padding: 10px 15px;
+  background-color: rgba(25, 28, 31, 0.84);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.jumbotron .prefisso {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right:  15px;
+  border-bottom: solid 1px #ccc;
+}
+.jumbotron .prefisso i {
+  color: #ccc;
+}
+.jumbotron .inserire_dati input {
+  border: transparent;
+  border-bottom: solid 1px #ccc;
+  margin-right: 15px;
+}
+.jumbotron .didiascalia {
+  display: block;
+  padding-top: 30px;
+}
+.jumbotron .didiascalia i {
+  padding-right: 10px;
+}
 /* hover */
 header a:hover {
   color: black;
