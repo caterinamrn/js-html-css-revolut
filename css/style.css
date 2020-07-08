@@ -142,10 +142,10 @@ header .jumbotron .introduzione p{
   padding-right: 10px;
 }
 /* hover */
-header a:hover {
+header a:hover,.humburge_principale .fas.fa-angle-down:hover {
   color: black;
 }
-#btn_scarica:hover {
+.btn_scarica:hover {
   background-color: rgba(25, 28, 31, 0.84);
   cursor: pointer;
 }
@@ -198,8 +198,20 @@ footer {
   .menu_hamburger_content .menu_fisso {
     padding: 0 48px;
   }
-  .menu_hamburger_content nav {
-    padding: 10px 30px; 
+  .menu_hamburger_content .humburge_principale {
+    padding: 10px 50px;
+  }
+  header .menu_hamburger_content .humburge_principale > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .menu_hamburger_content .humburge_principale > ul > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+  }
+  header .menu_hamburger_content .humburge_principale i {
+    color: rgb(117, 125, 133);
   }
   /* footer */
   footer {
