@@ -19,4 +19,13 @@ $(document).ready(function() {
   $(".fas.fa-times").click(function(){
     $(".menu_hamburger_content").hide();
   });
+
+  $(".fas.fa-angle-down").click(function(){
+    $(this).removeClass("fa-angle-down").addClass("fa-angle-up");
+  });
+// non funziona
+  $(".fas.fa-angle-up").click(function(){
+    console.log("ciao");
+    $(this).removeClass("fa-angle.up").addClass("fa-angle-down")
+  })
 });

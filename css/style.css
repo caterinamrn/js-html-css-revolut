@@ -198,20 +198,26 @@ footer {
   .menu_hamburger_content .menu_fisso {
     padding: 0 48px;
   }
-  .menu_hamburger_content .humburge_principale {
+  .menu_hamburger_content .hamburger_principale {
     padding: 10px 50px;
   }
-  header .menu_hamburger_content .humburge_principale > ul {
+  header .menu_hamburger_content .hamburger_principale > ul {
     display: flex;
     flex-direction: column;
   }
-  header .menu_hamburger_content .humburge_principale > ul > li {
+  header .menu_hamburger_content .hamburger_principale ul  li {
     display: flex;
     justify-content: space-between;
     padding: 15px 0px;
   }
-  header .menu_hamburger_content .humburge_principale i {
+  header .menu_hamburger_content .hamburger_principale i {
     color: rgb(117, 125, 133);
+  }
+  header .link_dropdown {
+    display: none;
+  }
+  header .hamburger_principale ul:first-of-type {
+    border-bottom: 1px solid #cfcfcf;
   }
   /* footer */
   footer {
