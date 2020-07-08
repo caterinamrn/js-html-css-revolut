@@ -167,6 +167,7 @@ footer {
   }
   header .menu_hamburger {
     display: block;
+    position:relative;
   }
   header .btn_scarica {
     display: none;
@@ -182,6 +183,23 @@ footer {
   header .jumbotron > div  {
     width: 80%;
     margin: 10px auto;
+  }
+  /* menu hamburger */
+  .menu_hamburger_content {
+    /* debug */
+    display: none;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+  }
+  .menu_hamburger_content .menu_fisso {
+    padding: 0 48px;
+  }
+  .menu_hamburger_content nav {
+    padding: 10px 30px; 
   }
   /* footer */
   footer {
