@@ -174,11 +174,30 @@ footer {
   header {
     height: calc(100vh - 150px);
     overflow-x: auto;
+    margin-bottom: 10px;
   }
+  header .jumbotron {
+    flex-wrap: wrap;
+  }
+  header .jumbotron > div  {
+    width: 80%;
+    margin: 10px auto;
+  }
+  /* footer */
   footer {
     display: block;
-    height: 150px;
-    background-color: red;
+    height: 180px;
     z-index: 3;
+    background-color: white;
+  }
+  footer h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  footer .btn_scarica {
+    display: block;
+    width: 120px;
+    margin: 20px auto;
   }
 }
