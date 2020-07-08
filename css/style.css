@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#btn_scarica {
+.btn_scarica {
   color: white;
   font-weight: bold;
   background-color: black;
@@ -79,7 +79,10 @@ header .menu_principale .dropdown_content {
 header .menu_principale .dropdown_content li {
   padding: 12px 17px;
 }
-
+/* humburger */
+header .menu_hamburger {
+  display: none;
+}
 /* jumbotron */
 header .jumbotron {
   display: flex;
@@ -145,4 +148,37 @@ header a:hover {
 #btn_scarica:hover {
   background-color: rgba(25, 28, 31, 0.84);
   cursor: pointer;
+}
+/* footer */
+footer {
+  display: none;
+}
+/* versione mobile */
+/* small device */
+@media all and (max-width:768px) {
+  .hidden {
+    display: none;
+  }
+  header .menu_fisso.hidden {
+    display: none;
+  }
+  header .jumbotron .hidden {
+    display: none;
+  }
+  header .menu_hamburger {
+    display: block;
+  }
+  header .btn_scarica {
+    display: none;
+  }
+  header {
+    height: calc(100vh - 150px);
+    overflow-x: auto;
+  }
+  footer {
+    display: block;
+    height: 150px;
+    background-color: red;
+    z-index: 3;
+  }
 }

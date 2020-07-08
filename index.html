@@ -11,7 +11,7 @@
   <body>
     <header>
 
-      <nav class="menu_fisso">
+      <nav class="menu_fisso hidden">
         <ul>
           <li><a id="personale" href="#">Personale</a></li>
           <li><a href="#">Business</a></li>
@@ -27,7 +27,7 @@
           <span id="logo"><a href="#">
             <img src="img/logo.png" alt="logo">
           </a></span>
-          <ul>
+          <ul class="hidden">
             <li class="dropdown_parent"><a href="#">Denaro</a>
               <div class="dropdown_content">
                 <ul>
@@ -77,15 +77,17 @@
               </div>
             </li>
           </ul>
+
         </nav>
-        <span id="btn_scarica">Scarica App</span>
+        <span class="menu_hamburger"><i class="fas fa-bars"></i></span>
+        <span class="btn_scarica">Scarica App</span>
       </div>
 
       <div class="jumbotron">
         <div class="introduzione">
           <h1>Ottieni di più dai tuoi fondi</h1>
           <p>Cambia denaro senza commissioni nascoste. Acquista Crypto e oro, oppure effettua una compravendita di azioni a partire da $ 1 e gestisci il tuo denaro con l'analisi della spesa. Unisciti a più di 10 milione di clienti Revolut.</p>
-          <div class="inserire_dati">
+          <div class="inserire_dati hidden">
             <div class="prefisso">
             <span>+39</span>
             <i class="fas fa-angle-down"></i>
@@ -93,7 +95,7 @@
             <input type="text" name="numero" placeholder="Numero di telefono">
             <button id="btnInizia" type="button" name="button">Inizia</button>
           </div>
-          <span class="didiascalia"><i class="fas fa-clock"></i> Apri un conto in pochi minuti </span>
+          <span class="didiascalia hidden"><i class="fas fa-clock"></i> Apri un conto in pochi minuti </span>
         </div>
         <div class="img">
           <img src="img/jumbo.png" alt="jumbotron">
@@ -103,6 +105,8 @@
 
     </header>
     <footer>
+      <h2>Tutta la tua vita a portata di dito</h2>
+      <span class="btn_scarica">Scarica App</span>
     </footer>
     <script src="js/script.js" type="text/javascript"></script>
   </body>
